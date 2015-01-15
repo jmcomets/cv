@@ -1,9 +1,14 @@
-\input{base}
+\documentclass[10pt, a4paper]{moderncv}
+
+\moderncvtheme[blue]{classic}
+
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
 
 \firstname{Jean-Marie}
 \familyname{Comets}
 \title{Élève ingénieur / Développeur}
-\address{13 rue Spréafico}{69100 Villeurbanne}
+\address{20 avenue Albert Einstein}{69100 Villeurbanne}
 \mobile{06 99 65 94 07}
 \email{jean.marie.comets@gmail.com}
 \homepage{jmcomets.com}
@@ -13,55 +18,75 @@
 
 \section{Diplômes et Études}
 
-\cventry{2012-actuel}{Formation d'ingénieur -- Informatique}{INSA de
+\cventry{2012 -- actuel}{Formation d'ingénieur -- Informatique}{INSA de
     Lyon}{}{}{}
-\cventry{2010-2012}{Premier cycle (classe préparatoire)}{INSA de Lyon}{}{}{}
+\cventry{2010 -- 2012}{Premier cycle (classe préparatoire)}{INSA de Lyon}{}{}{}
 \cventry{2010}{Bac S avec mention}{}{}{}{}
 
 \section{Expériences}
 
-\cventry{Mai à Août 2014}{Développeur Ruby On
+\cventry{Mai -- Août 2014}{Développeur Ruby On
     Rails}{Fidbacks}{Paris}{France}{Intégration au sein d'une start-up
     collectant des avis clients pour les sites de e-commerce (plateforme
     Prestashop). Développement de l'application web principale déployé sur
     Heroku, ainsi qu'un CRM interne déployé sur Amazon AWS-EC2.}
 
-\cventry{Juin à\\Septembre 2013}{Développeur C++}{LIRIS --
+\cventry{Juin -- Septembre 2013}{Développeur C++}{LIRIS --
     CNRS}{Villeurbanne}{France}{Implémentation d'un diagramme d'épaisseur basé
     sur l'arrangement exact de boules (3D). Codage d'une interface
     Qt/QGLViewer/GLUT, utilisation intensive d'outils d'aide à la compilation
     (CMake, QMake).}
 
-\cventry{Septembre 2012 -- actuel}{Association JeuxVidéo@INSA}{}{}{}{Ancien
-    secrétaire général, actuel président. L'association a pour but de
-    promouvoir la réalisation de jeux-vidéo et organise des rencontres avec des
-    professionnels du jeu vidéo (conférences avec Ubisoft notamment), ainsi que
-    des évènements de développement.}
+%\cventry{Septembre 2012 -- actuel}{Association JeuxVidéo@INSA}{}{}{}{Ancien
+    %secrétaire général, actuel président. L'association a pour but de
+    %promouvoir la réalisation de jeux-vidéo et organise des rencontres avec des
+    %professionnels du jeu vidéo (conférences avec Ubisoft notamment), ainsi que
+    %des évènements de développement.}
 
-\cventry{Septembre 2012 -- actuel}{Association CinéClub INSA}{}{}{}{Actuel
-    secrétaire général de l'association CinéClub INSA.}
+%\cventry{Septembre 2012 -- actuel}{Association CinéClub INSA}{}{}{}{Actuel
+    %secrétaire général de l'association CinéClub INSA.}
 
-\cventry{Juillet à\\Août 2012}{Assistant à la saisie/Aide administrateur
+\cventry{Juillet -- Août 2012}{Assistant à la saisie/Aide administrateur
     réseau}{ITEC Services}{Cenon}{France}{Saisie de réponses de patients
-    diabètiques dans le cadre d'une étude.\\Écriture de scripts de gestion des
+    diabètiques dans le cadre d'une étude. Écriture de scripts de gestion des
     machines sur le réseau de l'entreprise.}
+
+\section{Projets}
+
+\cventry{Février -- Avril 2014}{twitto-feels}{}{}{}{Projet scolaire.
+    Analyse de sentiments sur une période donnée (Python -- NLTK), en utilisant
+    l'API de streaming Twitter.}
+
+\cventry{Décembre -- Février 2014}{KHome}{}{}{}{Projet scolaire.
+    Système modulaire pour "maison intelligente", intégrant un magasin
+    d'applications en utilisant un protocole de communication réseau
+    ressemblant à JSON-RPC.}
+
+\cventry{Janvier 2014}{MindBlast}{}{}{}{Application web proposant des
+    suggestions de produits aux commerciaux d'AXA, s'intégrant au sein de
+    Salesforce. 4ème place au cours d'un hackaton.}
+
+\cventry{Septembre 2013}{TESS}{}{}{}{Moteur de recherche basé sur l'indexion de
+    modèles (Scikit-learn, Elastic Search, Flask). 1ère place au cours d'un
+    hackaton organisé par \href{http://www.fhacktory.com}{FHacktory}.}
 
 \section{Informatique}
 
-\cvcomputer{Web}{Python (Django, Flask), JavaScript \\(AngularJS), Ruby on Rails, PHP}
-    {Base de données}{MySQL, PostgreSQL, \\SQLite, MongoDB, Oracle}
-\cvcomputer{POO}{C++, Python, Ruby, Java, JavaScript}
-    {Impératif}{C, Pascal}
-\cvcomputer{Outils}{Git, SVN, \\QMake, CMake}
-    {Divers}{UML, Vim, Shell, \LaTeX, Linux}
+\cvcomputer{Web}{Python (Django, Flask), JavaScript (\textbf{AngularJS}), Ruby on Rails, PHP}
+           {Base de données}{MySQL, \textbf{PostgreSQL}, SQLite, MongoDB, Oracle}
+\cvcomputer{POO}{C++, \textbf{Python}, Ruby, Java, JavaScript}
+           {Impératif}{C, Pascal}
+\cvcomputer{Outils}{\textbf{Git}, SVN, QMake, CMake}
+           {Divers}{UML, \textbf{Vim}, Shell, \LaTeX, Linux}
 
 \section{Langues}
 
-\cvlanguage{Anglais}{bilingue}{}
+\cvlanguage{Anglais}{langue maternelle}{}
+\cvlanguage{Français}{bilingue}{}
 \cvlanguage{Espagnol}{courant}{}
 
-\section{Centres d'intérêt}
+%\section{Centres d'intérêt}
 
-\cvline{Loisirs}{cinéma, rugby, algorithmie}
+%\cvline{Loisirs}{cinéma, rugby, algorithmie}
 
 \end{document}

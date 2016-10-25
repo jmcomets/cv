@@ -1,104 +1,57 @@
 \documentclass[10pt, a4paper]{moderncv}
 
-\moderncvtheme[blue]{classic}
+\moderncvtheme[green]{classic}
 
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.8]{geometry}
+\usepackage[scale=0.825]{geometry}
 
 \firstname{Jean-Marie}
 \familyname{Comets}
-\title{2nd year engineering student / Developer}
-\address{20 avenue Albert Einstein}{69100 Villeurbanne}
+\title{Software engineer}
+\address{14 rue de Thionville}{75019 Paris}
 \mobile{(+33)6 99 65 94 07}
 \email{jean.marie.comets@gmail.com}
-\homepage{jmcomets.com}
+%\homepage{jmcomets.com}
 
 \begin{document}
 \maketitle
 
 \section{Studies}
 
-\cventry{2010 -- today}{Engineering -- Computer science}{INSA Lyon}{}{France}{}
+\cventry{2010 -- 2015}{Engineering -- Computer science}{INSA Lyon}{}{France}{}
 \cventry{2010}{"Baccalauréat" obtained with honours}{}{France}{}{}
-\cventry{2007 -- 2008}{Exchange class}{Cy-Fair High School}{Texas}{USA}{}
+%\cventry{2007 -- 2008}{Exchange class}{Cy-Fair High School}{Texas}{USA}{}
 
 \section{Experience}
 
-\cventry{May -- August 2014}{Ruby on Rails
-    developer}{Fidbacks}{Paris}{France}{Integrated a start-up which collects
-    client reviews for e-commerce websites (Prestashop). Developed the main web
-    application deployed on Heroku, as well as an internal CRM deployed on
-    Amazon AWS-EC2.}
+\cventry{Nov. 2015\\ (current)}{Software engineer}{Murex}{Paris}{France}{Member of the Market Data Calculation Chain team, responsible for the load \& update of market data from the database and real-time services. As this step is key for the company's product, the focus was on using efficient data structures and optimal algorithms. The role consists in solving various problems when scheduling with a dependency graph (cycles, dynamic edges), as well as writing generic frameworks for asset class teams (C++ template meta-programming).}
 
-\cventry{June -- September 2013}{C++ developer}{LIRIS --
-    CNRS}{Villeurbanne}{France}{Implemented a thickness diagram based on the
-    exact arrangement of 3D balls. Built a front-end interface based on
-    Qt/QGLViewer/GLUT, using extensive compiling and project tools
-    (CMake/QMake).}
+\cventry{Apr. -- Sep. 2015}{Software development intern}{Murex}{Paris}{France}{Developed a visualization tool to "replay" the load of market data, using structured logs. Logging was done with Log4j/cxx to Logstash, output to an ElasticSearch cluster. The tool was built in Java but the structured logging was in C++.}
 
-\cventry{July -- August 2012}{Entry assistant/Sysadmin helper}{ITEC
-    Services}{Cenon}{France}{Helped enter diabetic patients' responses for a
-    special study.\\Wrote script managing machines over the company's network.}
+\cventry{May -- Aug. 2014}{Devops intern}{Fidbacks}{Paris}{France}{Main developer at a start-up aggregating and automatically validating client reviews for e-commerce sites. Developed the company's back-end which included: multiple web-scrapers, MVC website development (Ruby on Rails), a/b testing, background job queue processing. Also developed the company's custom CRM for internal use, and managed the application deployment on the cloud (Heroku, AWS S3/EC2).}
 
-%\cventry{September 2012 -- today}{CinéClub INSA
-    %association}{}{Villeurbanne}{France}{Current secretary. CinéClub INSA is
-    %the official student association of INSA Lyon who handles \textbf{legal}
-    %movie projections for the school's students.}
+\cventry{Jun. -- Sep. 2013}{Lab intern}{LIRIS -- CNRS}{Villeurbanne}{France}{Implemented a thickness diagram based on the exact arrangement of 3D balls (CGAL, C++ template programming). Also built a front-end interface based on Qt/QGLViewer/GLUT.}
 
-\cventry{September 2012 -- January 2014}{JeuxVidéo@INSA
-    association}{}{Villeurbanne}{France}{Secretary for one year, president for
-    the second. The JeuxVidéo@INSA association aims to promote video game
-    creation (design, development, storyline, etc...). Organizes meetings
-    with video game professionals, conferences (notably with Ubisoft) and
-    development events (Game Rush -- hackathons).}
-
-%\cventry{March 2011 -- February 2012}{Sponsoring/Partners}{Gala INSA
-    %Lyon}{Villeurbanne}{France}{Organized the school's Gala, notably by finding
-    %sponsors for the event; at the head of a team of 3, in a complete team of
-    %35.}
+%\cventry{Sep. 2012\\ -- Jan. 2014}{JeuxVidéo@INSA association}{}{Villeurbanne}{France}{I was a member of the board of JeuxVidéo@INSA, a school association aiming to promote video game creation (design, development, storyline, etc...). We organized meetings with video game professionals, conferences and hackathons.}
 
 \section{Projects}
 
-\cventry{February -- April 2014}{twitto-feels}{}{}{}{School project.
-    Sentiment analysis on a given timeline, using Twitter's streaming API.}
+\cventry{Feb. -- Apr. 2014}{twitto-feels}{}{}{}{School project. Sentiment analysis on a given timeline (Python, NLTK/TextBlob), using Twitter's streaming API.}
 
-\cventry{December -- February 2014}{KHome}{}{}{}{School project.
-    "Intelligent Home" modular system, built alongside an app store and a
-    process communication system resembling JSON-RPC.}
+\cventry{Dec. -- Feb. 2014}{KHome}{}{}{}{"Smart Home" managed system (sensors, actuators) with a DSL to script modules, built alongside an app store and a process communication system resembling JSON-RPC (back-end in Python, web interface with AngularJS).}
 
-%\cventry{January 2014}{MindBlast}{}{}{}{Web app integrated to
-    %Salesforce aiming to provide suggestions to AXA sales employees. 4th
-    %place at a AXA/Salesforce hackthon organized by BeMyApp.}
+\cventry{Sep. 2013}{TESS}{}{}{}{Built a search-engine based on model indexing (Scikit-learn, ElasticSearch, Flask). 1st place at a \href{http://www.fhacktory.com}{FHacktory} hackathon.}
 
-\cventry{September 2013}{TESS}{}{}{}{Built a search-engine based
-    on model indexing (Scikit-learn, Elastic Search, Flask). 1st place
-    at a \href{http://www.fhacktory.com}{FHacktory} hackathon.}.
-
-\cventry{July -- September 2013}{IntoSpectrum}{}{}{}{Developing
-    an server-sided audio-player with a web front-end using NodeJS.}
-
-%\cventry{December 2011 -- June 2012}{BdEContact}{}{}{}{Developed a
-    %web-based CRM for the school's student association (BdE). Built
-    %\textit{from scratch} in PHP/MySQL with a AJAX-based user interface.}
-
-%\cventry{December 2012 -- May 2013}{EUSDAB}{}{}{Developed a
-    %fighting-platform game in C++11 using SFML, Boost and CMake \\(Super Smash
-    %Bros.-like)}
-
-%\cventry{June 2011 -- December 2013}{jmc-consultant}{}{}{}{Built
-    %from-scratch a website in PHP with a custom design.}
-
-%\textit{Note: most of these, as well as others, are open-source and available on
-    %\href{https://github.com/jmcomets}{Github}.}
+%\cventry{Jul. -- Sep. 2013}{IntoSpectrum}{}{}{}{Developing an server-sided audio-player with a web front-end using NodeJS.}
 
 \section{Computer science/Programming}
 
-\cvcomputer{Web}{Python (Flask, Django), JavaScript \\(AngularJS), Ruby on Rails, PHP}
-    {Database engines}{MySQL, \textbf{PostgreSQL}, SQLite, MongoDB, Oracle}
-\cvcomputer{OOP}{C++, \textbf{Python}, Ruby, Java, JavaScript}
-    {Imperative}{C, Pascal}
-\cvcomputer{Tools}{Git, SVN, QMake, CMake}
-    {Misc}{UML, \textbf{Vim}, Shell, \LaTeX.}
+\cvcomputer{Fluent in}{\textbf{C++}, \textbf{Python}, Java, Ruby, JavaScript}
+                    {Familiar with}{C, Haskell, Rust, Go, Pascal}
+\cvcomputer{Worked with}{Git, Perforce, SVN, Maven}
+    {Regular use}{\textbf{Vim}, Linux shell scripting, \LaTeX}
+\cvcomputer{Web}{Python, JavaScript, Ruby on Rails}
+                    {Databases}{PostgreSQL, SQLite, MySQL, MongoDB}
 
 \section{Languages}
 

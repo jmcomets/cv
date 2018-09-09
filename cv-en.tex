@@ -1,20 +1,46 @@
 \documentclass[10pt, a4paper]{moderncv}
 
-\moderncvtheme[green]{classic}
+\moderncvtheme[blue]{classic}
 
 \usepackage[utf8]{inputenc}
 \usepackage[scale=0.825]{geometry}
 
 \firstname{Jean-Marie}
 \familyname{Comets}
-\title{Software engineer}
-\address{14 rue de Thionville}{75019 Paris}
+\title{Software Engineer}
+\address{4 square Vitruve}{75020 Paris}
 \mobile{(+33)6 99 65 94 07}
 \email{jean.marie.comets@gmail.com}
-%\homepage{jmcomets.com}
+\homepage{jmcomets.com}
+\extrainfo{french/american citizen}
 
 \begin{document}
 \maketitle
+
+\section{Experience}
+
+\cventry{Nov. 2015\\ (on-going)}{Software Engineer}{Murex}{Paris}{France}{
+\begin{itemize}
+    \item Developing a service for distributed computation of market scenarios (Gemfire, QPid, C++/Java).
+    \item Previously built a service providing real-time prices (similar tech. stack as above).
+    \item Integrated OpenTracing in the platform (Zipkin, Jaeger, C++/Java).
+    \item Designed and implemented the platform's scheduling framework for market data (C++).
+\end{itemize}
+}
+
+\cventry{Apr. -- Sep. 2015}{Software development intern}{Murex}{Paris}{France}{Developed a visualization tool to "replay" the load of market data, using structured logs (ELK stack).}
+
+\cventry{May -- Aug. 2014}{Devops Intern}{Fidbacks}{Paris}{France}{
+\begin{itemize}
+    \item Extended the start-up's back-end scrapers (Ruby, web scraping).
+    \item Wrote management and newsletter scripts (job queue processing).
+    \item Built a custom CRM for internal use, deployed on AWS S3/EC2 (cloud deployment).
+\end{itemize}
+}
+
+\cventry{Jun. -- Sep. 2013}{Lab intern}{LIRIS -- CNRS}{Villeurbanne}{France}{Implemented a thickness diagram based on the exact arrangement of 3D balls (C++, geometric algorithms), front-end interface built in Qt/GLUT.}
+
+\cventry{2012 -- 2014}{JeuxVidéo@INSA association}{}{Villeurbanne}{France}{President of JeuxVidéo@INSA, a school association promoting video game creation (design, development, storyline, etc...). Organized meetings with video game professionals, conferences and hackathons.}
 
 \section{Studies}
 
@@ -22,41 +48,29 @@
 \cventry{2010}{"Baccalauréat" obtained with honours}{}{France}{}{}
 %\cventry{2007 -- 2008}{Exchange class}{Cy-Fair High School}{Texas}{USA}{}
 
-\section{Experience}
+\section{Side Projects}
 
-\cventry{Nov. 2015\\ (current)}{Software engineer}{Murex}{Paris}{France}{Member of the Market Data Calculation Chain team, responsible for the load \& update of market data from the database and real-time services. As this step is key for the company's product, the focus was on using efficient data structures and optimal algorithms. The role consists in solving various problems when scheduling with a dependency graph (cycles, dynamic edges), as well as writing generic frameworks for asset class teams (C++ template meta-programming).}
+\cventry{Jan. 2017 (on-going)}{petgraph}{Frequent Contributor}{}{}{Contributions to an open-source graph library: adjacency matrix, A*, type-safe pathfinding (Rust).}
 
-\cventry{Apr. -- Sep. 2015}{Software development intern}{Murex}{Paris}{France}{Developed a visualization tool to "replay" the load of market data, using structured logs. Logging was done with Log4j/cxx to Logstash, output to an ElasticSearch cluster. The tool was built in Java but the structured logging was in C++.}
+\cventry{Feb. -- Apr. 2014}{twitto-feels}{School project}{}{}{Sentiment analysis of tweets sent on a given timeline, using NLTK and the Twitter streaming API (Python).}
 
-\cventry{May -- Aug. 2014}{Devops intern}{Fidbacks}{Paris}{France}{Main developer at a start-up aggregating and automatically validating client reviews for e-commerce sites. Developed the company's back-end which included: multiple web-scrapers, MVC website development (Ruby on Rails), a/b testing, background job queue processing. Also developed the company's custom CRM for internal use, and managed the application deployment on the cloud (Heroku, AWS S3/EC2).}
+\cventry{Dec. -- Feb. 2014}{KHome}{School project}{}{}{"Smart Home" managed system (sensors, actuators) with a DSL to script modules, built alongside an app store and a process communication system resembling JSON-RPC (Python).}
 
-\cventry{Jun. -- Sep. 2013}{Lab intern}{LIRIS -- CNRS}{Villeurbanne}{France}{Implemented a thickness diagram based on the exact arrangement of 3D balls (CGAL, C++ template programming). Also built a front-end interface based on Qt/QGLViewer/GLUT.}
+\cventry{Sep. 2013}{TESS}{Hackathon project, 1st place}{}{}{Built a search-engine based on sematic document analysis (Python, Scikit-learn, ElasticSearch).}
 
-%\cventry{Sep. 2012\\ -- Jan. 2014}{JeuxVidéo@INSA association}{}{Villeurbanne}{France}{I was a member of the board of JeuxVidéo@INSA, a school association aiming to promote video game creation (design, development, storyline, etc...). We organized meetings with video game professionals, conferences and hackathons.}
+\section{Computer science / Programming}
 
-\section{Projects}
-
-\cventry{Feb. -- Apr. 2014}{twitto-feels}{}{}{}{School project. Sentiment analysis on a given timeline (Python, NLTK/TextBlob), using Twitter's streaming API.}
-
-\cventry{Dec. -- Feb. 2014}{KHome}{}{}{}{"Smart Home" managed system (sensors, actuators) with a DSL to script modules, built alongside an app store and a process communication system resembling JSON-RPC (back-end in Python, web interface with AngularJS).}
-
-\cventry{Sep. 2013}{TESS}{}{}{}{Built a search-engine based on model indexing (Scikit-learn, ElasticSearch, Flask). 1st place at a \href{http://www.fhacktory.com}{FHacktory} hackathon.}
-
-%\cventry{Jul. -- Sep. 2013}{IntoSpectrum}{}{}{}{Developing an server-sided audio-player with a web front-end using NodeJS.}
-
-\section{Computer science/Programming}
-
-\cvcomputer{Fluent in}{\textbf{C++}, \textbf{Python}, Java, Ruby, JavaScript}
-                    {Familiar with}{C, Haskell, Rust, Go, Pascal}
-\cvcomputer{Worked with}{Git, Perforce, SVN, Maven}
-    {Regular use}{\textbf{Vim}, Linux shell scripting, \LaTeX}
-\cvcomputer{Web}{Python, JavaScript, Ruby on Rails}
-                    {Databases}{PostgreSQL, SQLite, MySQL, MongoDB}
+\cvcomputer{Fluent in}{C++, Python, Java, Rust, Ruby}
+           {Familiar with}{C, Haskell, Go, Pascal}
+\cvcomputer{Worked with}{Git, Perforce, Maven, Jenkins}
+           {Regular use}{Vim, Linux shell scripting}
+\cvcomputer{Technologies}{Gemfire, QPid, PostgreSQL, MongoDB}
+           {Hot topics}{Graph Algorithms, Distributed Systems}
 
 \section{Languages}
 
-\cvlanguage{English}{mother tongue}{}
-\cvlanguage{French}{bilingual}{}
-\cvlanguage{Spanish}{good understanding and communication}{}
+\cvlanguage{English}{Native language}{}
+\cvlanguage{French}{Bilingual}{}
+\cvlanguage{Spanish}{Good understanding and communication}{}
 
 \end{document}
